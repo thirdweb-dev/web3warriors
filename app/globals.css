@@ -24,4 +24,13 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-family: var(--font-inter);
+}
+
+.font-oswald {
+  font-family: var(--font-oswald);
+}
+
+.font-rye {
+  font-family: var(--font-rye);
 }
