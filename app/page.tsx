@@ -19,7 +19,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-[url('/assets/onchain-survival-mobile.png')] lg:bg-[url('/assets/onchain-survival.jpg')] bg-cover py-16">
+      <div className="bg-[url('/assets/onchain-survival-mobile.png')] lg:bg-[url('/assets/onchain-survival.png')] bg-cover py-16">
         <div className="container gap-12 px-4 pt-16 mx-auto sm:px-6 lg:px-8">
           <div className="lg:mx-auto lg:max-w-5xl">
             <div className="flex flex-col gap-12 lg:flex-row">
@@ -28,9 +28,9 @@ export default function Home() {
                 <h3 className="mt-3 mb-6 text-3xl uppercase font-oswald lg:text-7xl">Epic Onchain Survival Game</h3>
                 <span>Escape the dungeon by battling elemental lords, endless waves of undead enemies and terrifying bosses.</span>
               </div>
-              <div className="mx-auto">
+              <div className="mx-auto overflow-hidden rounded-xl">
                 <Image
-                  src="/assets/carousel.png"
+                  src="/assets/slider-1.png"
                   alt=""
                   width={300}
                   height={500}
