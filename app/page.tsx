@@ -1,4 +1,5 @@
 import { FeatureCard } from "@/components/FeatureCard";
+import { HeroTitle } from "@/components/HeroTitle";
 import { IconBox } from "@/components/IconBox";
 import Image from 'next/image';
 
@@ -8,22 +9,7 @@ export default function Home() {
       <div className="bg-[url('/assets/hero-mobile.png')] lg:bg-[url('/assets/hero.png')] bg-cover pt-20 pb-16">
         <div className="container gap-12 px-4 mx-auto text-center sm:px-6 lg:px-8">
           <div className="lg:mx-auto lg:max-w-lg">
-            <div>
-              <h3 className="text-sm lg:text-xl font-oswald">thirdweb presents</h3>
-              <h1 className="mt-2 text-4xl uppercase lg:text-5xl font-rye">Web3 Warriors</h1>
-              <span className="flex items-center justify-center w-full gap-2.5 mt-3">
-                <h2 className="text-xl leading-7 font-oswald">Built on</h2>
-                <div className="flex items-center justify-center">
-                  <Image
-                    src="/assets/base.svg"
-                    alt="Base"
-                    className="invert"
-                    width={80}
-                    height={45}
-                  />
-                </div>
-              </span>
-            </div>
+            <HeroTitle />
             <div className="w-full h-48 mt-8 bg-gray-900 rounded-lg lg:h-64" />
             <div className="grid grid-cols-3 gap-4 px-12 mt-12">
               <IconBox src="/assets/platforms/apple.svg" alt="Apple" />
@@ -54,7 +40,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-[#080A0B]">
+      <div>
         <div className="container gap-12 px-4 py-16 mx-auto sm:px-6 lg:px-8 ">
           <div className="lg:mx-auto lg:max-w-5xl">
             <div className="pb-4 text-center lg:pb-12">
@@ -71,7 +57,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-[url('/assets/learn-mobile.png')] lg:bg-[url('')] lg:bg-[#080A0B] bg-cover py-16">
+      <div className="bg-[url('/assets/learn-mobile.png')] lg:bg-[url('')] lg: bg-cover py-16">
         <div className="container gap-12 px-4 mx-auto sm:px-6 lg:px-8">
           <div className="lg:mx-auto lg:max-w-5xl">
             <div className="flex flex-col gap-12 lg:flex-row">
@@ -97,7 +83,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-[#080A0B]">
+      <div>
         <div className="container gap-12 px-4 py-16 mx-auto sm:px-6 lg:px-8 ">
           <div className="lg:mx-auto lg:max-w-5xl">
             <div className="pb-4 text-center lg:pb-12">
@@ -112,7 +98,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-[#080A0B]">
+      <div>
         <div className="container gap-12 px-4 pt-8 pb-16 mx-auto sm:px-6 lg:px-8 ">
           <div className="lg:mx-auto lg:max-w-5xl">
             <div className="flex justify-between mx-auto mb-4 lg:w-[430px]">
@@ -138,19 +124,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <div className="bg-[#080A0B]">
-        <div className="container gap-12 px-4 pt-8 pb-16 mx-auto sm:px-6 lg:px-8 ">
-          <div className="lg:mx-auto lg:max-w-5xl">
-            <h4 className="text-lg text-center uppercase lg:text-xl font-rye">Web3 Warriors</h4>
-            <div className="w-full h-0.5 bg-gray-900 my-4" />
-            <div className="flex flex-col lg:flex-row lg:justify-between">
-              <span className="text-sm text-center text-gray-600 lg:text-left">All Rights Reserved @thirdweb</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </main>
   );
 }
