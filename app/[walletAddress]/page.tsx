@@ -18,7 +18,9 @@ export default function ProfilePage({ params, searchParams }: ProfilePageProps) 
         <HeroTitle />
       </div>
       <div className="flex justify-center mt-12">
-        <Image src={`https://ipfs.thirdwebcdn.com/ipfs/${searchParams.ipfs}`} alt="" width={800} height={200} />
+        {searchParams.ipfs ? (
+          <Image src={`https://ipfs.thirdwebcdn.com/ipfs/${searchParams.ipfs}`} alt="" width={800} height={200} />
+        ) : <div className="italic">No image found</div>}
       </div>
       <div className="mt-12">
         <IconBox src="/assets/platforms/twitter.png" alt="Share" />
