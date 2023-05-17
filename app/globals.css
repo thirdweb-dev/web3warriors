@@ -22,7 +22,7 @@ body {
 }
 
 body {
-  @apply bg-[#080A0B];
+  @apply bg-[#080A0B] text-white;
 }
 
 .font-oswald {
