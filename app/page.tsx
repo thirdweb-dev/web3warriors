@@ -1,6 +1,7 @@
 import { FeatureCard } from "@/components/FeatureCard";
 import { HeroTitle } from "@/components/HeroTitle";
 import { IconBox } from "@/components/IconBox";
+import { ImageCarousel } from "@/components/ImageCarousel";
 import { YoutubeEmbed } from "@/components/YoutubeEmbed";
 import Image from 'next/image';
 
@@ -21,22 +22,15 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-[url('/assets/onchain-survival-mobile.png')] lg:bg-[url('/assets/onchain-survival.png')] bg-cover py-16">
-        <div className="container gap-12 px-4 pt-16 mx-auto sm:px-6 lg:px-8">
+        <div className="container gap-12 px-4 mx-auto sm:px-6 lg:px-8">
           <div className="lg:mx-auto lg:max-w-5xl">
             <div className="flex flex-col gap-12 lg:flex-row">
-              <div className="flex-1 text-center lg:text-left">
+              <div className="flex flex-col flex-1 text-center lg:justify-center lg:text-left">
                 <h3 className="uppercase text-md lg:text-lg font-oswald">Escape the dungeon</h3>
                 <h3 className="mt-3 mb-6 text-3xl uppercase font-oswald lg:text-7xl">Epic Onchain <br /> Survival Game</h3>
                 <span>Escape the dungeon by battling elemental lords, endless waves of undead enemies and terrifying bosses.</span>
               </div>
-              <div className="mx-auto overflow-hidden rounded-xl">
-                <Image
-                  src="/assets/slider-1.png"
-                  alt=""
-                  width={300}
-                  height={500}
-                />
-              </div>
+              <ImageCarousel />
             </div>
           </div>
         </div>
