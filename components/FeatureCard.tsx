@@ -15,7 +15,9 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, im
         width={45}
         height={45}
       />
-      <h3 className="my-4 text-xl uppercase lg:text-xl font-oswald">{title}</h3>
+      <h3 className="my-4 text-xl uppercase lg:text-xl font-oswald">
+        {title}
+      </h3>
       <span>{description}</span>
     </div>
   );
