@@ -4,8 +4,19 @@ import { IconBox } from "@/components/IconBox";
 import { ImageCarousel } from "@/components/ImageCarousel";
 import { YoutubeEmbed } from "@/components/YoutubeEmbed";
 import Image from 'next/image';
+import { useMemo } from "react";
 
 export default function Home() {
+  const twitterIntentUrl = useMemo(() => {
+    const url = new URL("https://twitter.com/intent/tweet");
+    url.searchParams.append(
+      "text",
+      `Check out Web3 Warriors, a game built on Base with @thirdweb`,
+    );
+    url.searchParams.append("url", "https://web3warriors.thirdweb.com/");
+    return url.href;
+  }, []);
+
   return (
     <main>
       <div className="bg-[url('/assets/hero-mobile.png')] lg:bg-[url('/assets/hero.png')] bg-cover pt-20 pb-16">
@@ -116,7 +127,7 @@ export default function Home() {
               <h3 className="uppercase text-md lg:text-lg font-oswald">Build web3 games</h3>
               <h3 className="mt-3 mb-6 text-3xl uppercase font-oswald lg:text-7xl">Check out <span className="text-[#3DB8A5]">thirdweb</span></h3>
             </div>
-            <IconBox src="/assets/platforms/twitter.png" alt="Share" href="" />
+            <IconBox src="/assets/platforms/twitter.png" alt="Share" href={twitterIntentUrl} />
           </div>
         </div>
       </div>
