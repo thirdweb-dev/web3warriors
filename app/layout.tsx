@@ -20,8 +20,8 @@ const rye = Rye({
   display: 'swap',
 });
 
-const title = 'Web3 Warriors';
-const description = 'Epic onchain survival game. Brought to you by thirdweb.';
+const title = 'Web3 Warriors: An Onchain Survival Game';
+const description = 'Web3 Warriors is the ultimate onchain survival game. Kill the undead, level up your character, and escape the dungeon. Play now.';
 
 
 export const metadata = {
