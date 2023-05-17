@@ -1,6 +1,7 @@
 import { FeatureCard } from "@/components/FeatureCard";
 import { HeroTitle } from "@/components/HeroTitle";
 import { IconBox } from "@/components/IconBox";
+import { YoutubeEmbed } from "@/components/YoutubeEmbed";
 import Image from 'next/image';
 
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
         <div className="container gap-12 px-4 mx-auto text-center sm:px-6 lg:px-8">
           <div className="lg:mx-auto lg:max-w-lg">
             <HeroTitle />
-            <div className="w-full h-48 mt-8 bg-gray-900 rounded-lg lg:h-64" />
+            <YoutubeEmbed youtubeId="dQw4w9WgXcQ" />
             <div className="grid grid-cols-3 gap-4 px-12 mt-12">
               <IconBox src="/assets/platforms/apple.svg" alt="Apple" href="https://developer.cloud.unity3d.com/share/share.html?shareId=b1nHUsd4Ut" />
               <IconBox src="/assets/platforms/windows.png" alt="Windows" href="https://developer.cloud.unity3d.com/share/share.html?shareId=ZkhdIiONIK" />
@@ -25,7 +26,7 @@ export default function Home() {
             <div className="flex flex-col gap-12 lg:flex-row">
               <div className="flex-1 text-center lg:text-left">
                 <h3 className="uppercase text-md lg:text-lg font-oswald">Escape the dungeon</h3>
-                <h3 className="mt-3 mb-6 text-3xl uppercase font-oswald lg:text-7xl">Epic Onchain Survival Game</h3>
+                <h3 className="mt-3 mb-6 text-3xl uppercase font-oswald lg:text-7xl">Epic Onchain <br /> Survival Game</h3>
                 <span>Escape the dungeon by battling elemental lords, endless waves of undead enemies and terrifying bosses.</span>
               </div>
               <div className="mx-auto overflow-hidden rounded-xl">
