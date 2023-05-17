@@ -23,7 +23,7 @@ export default function ProfilePage({ params, searchParams }: ProfilePageProps) 
         ) : <div className="italic">No image found</div>}
       </div>
       <div className="mt-12">
-        <IconBox src="/assets/platforms/twitter.png" alt="Share" />
+        <IconBox src="/assets/platforms/twitter.png" alt="Share" href="" />
       </div>
     </div>);
 }

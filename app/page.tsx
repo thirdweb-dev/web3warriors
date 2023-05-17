@@ -12,9 +12,9 @@ export default function Home() {
             <HeroTitle />
             <div className="w-full h-48 mt-8 bg-gray-900 rounded-lg lg:h-64" />
             <div className="grid grid-cols-3 gap-4 px-12 mt-12">
-              <IconBox src="/assets/platforms/apple.svg" alt="Apple" />
-              <IconBox src="/assets/platforms/windows.png" alt="Windows" />
-              <IconBox src="/assets/platforms/linux.png" alt="Linux" />
+              <IconBox src="/assets/platforms/apple.svg" alt="Apple" href="https://developer.cloud.unity3d.com/share/share.html?shareId=b1nHUsd4Ut" />
+              <IconBox src="/assets/platforms/windows.png" alt="Windows" href="https://developer.cloud.unity3d.com/share/share.html?shareId=ZkhdIiONIK" />
+              <IconBox src="/assets/platforms/linux.png" alt="Linux" href="https://developer.cloud.unity3d.com/share/share.html?shareId=byCiRqu48K" />
             </div>
           </div>
         </div>
@@ -72,7 +72,8 @@ export default function Home() {
               <div className="flex-1 text-center lg:text-left">
                 <h3 className="mt-3 mb-12 text-3xl uppercase font-oswald lg:text-7xl">Learn how to build web3 games</h3>
                 <a
-                  href="#"
+                  href="https://thirdweb.com/solutions/gaming"
+                  target="_blank"
                   className="rounded-md bg-[#3DB8A5] px-12 py-4 text-sm font-semibold text-black shadow-sm hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3DB8A5]"
                 >
                   Learn More
@@ -120,7 +121,7 @@ export default function Home() {
               <h3 className="uppercase text-md lg:text-lg font-oswald">Build web3 games</h3>
               <h3 className="mt-3 mb-6 text-3xl uppercase font-oswald lg:text-7xl">Check out <span className="text-[#3DB8A5]">thirdweb</span></h3>
             </div>
-            <IconBox src="/assets/platforms/twitter.png" alt="Share" />
+            <IconBox src="/assets/platforms/twitter.png" alt="Share" href="" />
           </div>
         </div>
       </div>
