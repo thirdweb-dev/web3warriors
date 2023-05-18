@@ -11,11 +11,11 @@ export default function Home() {
     <main>
       <div className="bg-[url('/assets/hero-mobile.png')] lg:bg-[url('/assets/hero.png')] bg-cover pt-28 pb-16">
         <div className="container gap-12 px-4 mx-auto text-center sm:px-6 lg:px-8">
-          <div className="lg:mx-auto lg:max-w-lg">
+          <div className="lg:mx-auto lg:max-w-xl">
             <HeroTitle />
             <YoutubeEmbed youtubeId="dQw4w9WgXcQ" />
             <div className="px-12 mt-12">
-              <h3 className="mb-6 text-3xl uppercase lg:text-4xl font-oswald">Download now</h3>
+              <h3 className="mb-6 text-3xl uppercase lg:text-4xl">Download now</h3>
               <div className="grid grid-cols-3 gap-4 ">
                 <IconBox src="/assets/platforms/apple.svg" alt="Mac" href="/assets/downloads/web3-warriors-launcher-mac.zip" />
                 <IconBox src="/assets/platforms/windows.png" alt="Windows" href="/assets/downloads/web3-warriors-launcher-windows.zip" />
@@ -30,8 +30,8 @@ export default function Home() {
           <div className="lg:mx-auto lg:max-w-5xl">
             <div className="flex flex-col gap-12 lg:flex-row">
               <div className="flex flex-col flex-1 text-center lg:justify-center lg:text-left">
-                <h3 className="uppercase text-md lg:text-lg font-oswald">Escape the dungeon</h3>
-                <h3 className="mt-3 mb-6 text-3xl uppercase font-oswald lg:text-7xl">Epic Onchain <br /> Survival Game</h3>
+                <h3 className="uppercase text-md lg:text-lg">Escape the dungeon</h3>
+                <h3 className="mt-3 mb-6 text-3xl uppercase lg:text-7xl">Epic Onchain <br /> Survival Game</h3>
                 <span>Escape the dungeon by battling elemental lords, endless waves of undead enemies and terrifying bosses. Earn $BATTLE tokens and upgrade your characters by buying NFTs in the in-game shop.</span>
               </div>
               <ImageCarousel />
@@ -43,8 +43,8 @@ export default function Home() {
         <div className="container gap-12 px-4 py-16 mx-auto sm:px-6 lg:px-8 ">
           <div className="lg:mx-auto lg:max-w-5xl">
             <div className="pb-4 text-center lg:pb-12">
-              <h3 className="uppercase text-md lg:text-lg font-oswald">Built with thirdweb</h3>
-              <h3 className="mt-3 mb-6 text-3xl uppercase font-oswald lg:text-7xl">Web3 under the hood</h3>
+              <h3 className="uppercase text-md lg:text-lg">Built with thirdweb</h3>
+              <h3 className="mt-3 mb-6 text-3xl uppercase lg:text-7xl">Web3 under the hood</h3>
             </div>
             <div className="grid grid-cols-1 gap-4 lg:grid-cols-4">
               <FeatureCard title="Invisible Wallet" description="Automatically generate wallets for all players. Play and collect assets without connecting your wallet or signing transactions." image="/assets/features/wallet.png" learnMore="https://portal.thirdweb.com/wallet/local-wallet" />
@@ -69,9 +69,9 @@ export default function Home() {
                 />
               </div>
               <div className="flex-1 text-center lg:text-left">
-                <h3 className="mt-3 mb-12 text-3xl uppercase font-oswald lg:text-7xl">How we built Web3 Warriors</h3>
+                <h3 className="mt-3 mb-12 text-3xl uppercase lg:text-7xl">How we built Web3 Warriors</h3>
                 <a
-                  href="#"
+                  href="https://blog.thirdweb.com/how-we-built-web3-warriors/"
                   target="_blank"
                   className="rounded-md bg-[#3DB8A5] px-12 py-4 text-sm font-semibold text-black shadow-sm hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3DB8A5]"
                 >
@@ -87,7 +87,7 @@ export default function Home() {
         <div className="container gap-12 px-4 py-16 mx-auto sm:px-6 lg:px-8 ">
           <div className="lg:mx-auto lg:max-w-5xl">
             <div className="pb-4 text-center lg:pb-12">
-              <h3 className="mt-3 mb-6 text-3xl uppercase font-oswald lg:text-7xl">Why build web3 games</h3>
+              <h3 className="mt-3 mb-6 text-3xl uppercase lg:text-7xl">Why build web3 games</h3>
             </div>
             <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
               <FeatureCard title="Build faster" description="No need to setup databases and servers for your game. Simply use the power of blockchain to load user data and assets." image="/assets/features/rocket.png" />
@@ -117,9 +117,9 @@ export default function Home() {
 
             </div>
             <div className="pb-4 text-center">
-              <h3 className="uppercase text-md lg:text-lg font-oswald">Build web3 games fast</h3>
+              <h3 className="uppercase text-md lg:text-lg">Build web3 games fast</h3>
               <Link href="https://thirdweb.com/solutions/gaming" target="_blank" className="underline text-[#3DB8A5] ">
-                <h3 className="mt-3 mb-6 text-3xl uppercase font-oswald lg:text-7xl"><span className="text-white">Try thirdweb</span> GamingKit</h3>
+                <h3 className="mt-3 mb-6 text-3xl uppercase lg:text-7xl"><span className="text-white">Try thirdweb</span> GamingKit</h3>
               </Link>
             </div>
           </div>

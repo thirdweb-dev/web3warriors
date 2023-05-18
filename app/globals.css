@@ -18,17 +18,12 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  font-family: var(--font-inter);
 }
 
 body {
-  @apply bg-[#080A0B] text-white;
+  @apply bg-[#080A0B] text-white font-sans;
 }
 
-.font-oswald {
-  font-family: var(--font-oswald);
-}
-
-.font-rye {
-  font-family: var(--font-rye);
+h3 {
+  @apply font-oswald;
 }

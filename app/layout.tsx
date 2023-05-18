@@ -1,6 +1,8 @@
 import { Footer } from '@/components/Footer';
 import './globals.css';
-import { Inter, Oswald, Rye } from 'next/font/google';
+import { Inter, Oswald } from 'next/font/google';
+import localFont from 'next/font/local';
+import PlausibleProvider from "next-plausible";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -14,12 +16,12 @@ const oswald = Oswald({
   display: 'swap',
 });
 
-const rye = Rye({
-  subsets: ['latin'],
-  weight: "400",
-  variable: '--font-rye',
-  display: 'swap',
+const wildBreath = localFont({
+  src: './wild-breath.otf',
+  variable: '--font-wild-breath',
+  display: 'swap'
 });
+
 
 const title = 'Web3 Warriors: An Onchain Survival Game';
 const description = 'Web3 Warriors is the ultimate onchain survival game. Kill the undead, level up your character, and escape the dungeon. Play now.';
@@ -51,11 +53,17 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
   return (
+    <PlausibleProvider
+      domain="web3warriors.thirdweb.com"
+      customDomain="https://pl.thirdweb.com"
+      selfHosted
+    >
     <html lang="en">
-      <body className={`${inter.variable} ${oswald.variable} ${rye.variable}`}>
+      <body className={`${inter.variable} ${oswald.variable} ${wildBreath.variable}`}>
         {children}
         <Footer />
       </body>
     </html>
+    </PlausibleProvider>
   );
 }
