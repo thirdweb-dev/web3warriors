@@ -17,9 +17,9 @@ export default function Home() {
             <div className="px-12 mt-12">
               <h3 className="mb-6 text-3xl uppercase lg:text-4xl font-oswald">Download now</h3>
               <div className="grid grid-cols-3 gap-4 ">
-                <IconBox src="/assets/platforms/apple.svg" alt="Mac" href="/assets/downloads/web3-warriors-mac.zip" />
-                <IconBox src="/assets/platforms/windows.png" alt="Windows" href="/assets/downloads/web3-warriors-windows.zip" />
-                <IconBox src="/assets/platforms/linux.png" alt="Linux" href="/assets/downloads/web3-warriors-linux.zip" />
+                <IconBox src="/assets/platforms/apple.svg" alt="Mac" href="/assets/downloads/web3-warriors-launcher-mac.zip" />
+                <IconBox src="/assets/platforms/windows.png" alt="Windows" href="/assets/downloads/web3-warriors-launcher-windows.zip" />
+                <IconBox src="/assets/platforms/linux.png" alt="Linux" href="/assets/downloads/web3-warriors-launcher-linux.zip" />
               </div>
             </div>
           </div>
