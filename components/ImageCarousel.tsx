@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
+import { GlowBox } from './GlowBox';
 
 export const ImageCarousel: React.FC = () => {
   const images = [
@@ -34,14 +35,17 @@ export const ImageCarousel: React.FC = () => {
         <button onClick={goPrevious} className="px-4 py-2 text-4xl text-white rounded-lg">&#8249;</button>
         <div className="relative mx-4 my-4 w-80 h-96 xl:w-[400px] xl:h-[500px]">
           {images.map((img, index) => (
-            <Image
-              key={img}
-              src={img}
-              alt="carousel"
-              className={`shadow-xl shadow-[#3DB8A5]/50 absolute inset-0 object-cover w-full h-full rounded-lg transition-opacity duration-1000 ${currentImage === index ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
-              width={300}
-              height={500}
-            />
+            <div key={img} className='absolute inset-0 object-cover w-full h-full'>
+              <GlowBox >
+                <Image
+                  src={img}
+                  alt="carousel"
+                  className={`absolute inset-0 object-cover w-full h-full rounded-lg transition-opacity duration-1000 ${currentImage === index ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
+                  width={300}
+                  height={500}
+                />
+              </GlowBox>
+            </div>
           ))}
         </div>
         <button onClick={goNext} className="px-4 py-2 text-4xl text-white rounded-lg">&#8250;</button>
