@@ -1,6 +1,6 @@
 import { Footer } from '@/components/Footer';
 import './globals.css';
-import { Inter, Oswald, Rye } from 'next/font/google';
+import { Inter, Oswald } from 'next/font/google';
 import localFont from 'next/font/local';
 
 const inter = Inter({
