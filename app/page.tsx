@@ -119,7 +119,7 @@ export default function Home() {
             <div className="pb-4 text-center">
               <h3 className="uppercase text-md lg:text-lg">Build web3 games fast</h3>
               <Link href="https://thirdweb.com/solutions/gaming" target="_blank" className="underline text-[#3DB8A5] ">
-                <h3 className="mt-3 mb-6 text-3xl uppercase lg:text-7xl"><span className="text-white">Try thirdweb</span> GamingKit</h3>
+                <h3 className="mt-3 mb-6 text-3xl uppercase lg:text-7xl"><span className="text-white">Build with</span> GamingKit</h3>
               </Link>
             </div>
           </div>
