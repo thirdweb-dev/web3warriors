@@ -32,7 +32,7 @@ export const metadata = {
     title,
     description,
     url: 'https://web3warriors.thirdweb.com',
-    siteName: 'Next.js',
+    siteName: 'Web3 Warriors',
     images: [
       {
         url: 'https://web3warriors.thirdweb.com/og.png',
