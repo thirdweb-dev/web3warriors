@@ -2,6 +2,7 @@ import { Footer } from '@/components/Footer';
 import './globals.css';
 import { Inter, Oswald } from 'next/font/google';
 import localFont from 'next/font/local';
+import PlausibleProvider from "next-plausible";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -52,11 +53,17 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
   return (
+    <PlausibleProvider
+      domain="web3warriors.thirdweb.com"
+      customDomain="https://pl.thirdweb.com"
+      selfHosted
+    >
     <html lang="en">
       <body className={`${inter.variable} ${oswald.variable} ${wildBreath.variable}`}>
         {children}
         <Footer />
       </body>
     </html>
+    </PlausibleProvider>
   );
 }
