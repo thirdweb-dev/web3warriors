@@ -71,7 +71,7 @@ export default function Home() {
               <div className="flex-1 text-center lg:text-left">
                 <h3 className="mt-3 mb-12 text-3xl uppercase lg:text-7xl">How we built Web3 Warriors</h3>
                 <a
-                  href="#"
+                  href="https://blog.thirdweb.com/how-we-built-web3-warriors/"
                   target="_blank"
                   className="rounded-md bg-[#3DB8A5] px-12 py-4 text-sm font-semibold text-black shadow-sm hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3DB8A5]"
                 >
