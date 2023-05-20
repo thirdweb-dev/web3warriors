@@ -10,6 +10,7 @@ interface FeatureCardProps {
 
 export const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, image, learnMore }) => {
   return (
+
     <div className="bg-[#171717] p-8 rounded-lg flex flex-col justify-between">
       <div>
         <Image
