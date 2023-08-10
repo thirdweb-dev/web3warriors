@@ -16,10 +16,9 @@ export default function Home() {
             <YoutubeEmbed youtubeId="daL8qFTHnRI" />
             <div className="px-12 mt-12">
               <h3 className="mb-6 text-3xl uppercase lg:text-4xl">Download now</h3>
-              <div className="grid grid-cols-3 gap-4 ">
+              <div className="grid grid-cols-2 gap-4 ">
                 <IconBox src="/assets/platforms/apple.svg" alt="Mac" href="/assets/downloads/web3-warriors-launcher-mac.zip" />
                 <IconBox src="/assets/platforms/windows.png" alt="Windows" href="/assets/downloads/web3-warriors-launcher-windows.zip" />
-                <IconBox src="/assets/platforms/linux.png" alt="Linux" href="/assets/downloads/web3-warriors-launcher-linux.zip" />
               </div>
             </div>
           </div>
@@ -47,8 +46,8 @@ export default function Home() {
               <h3 className="mt-3 mb-6 text-3xl uppercase lg:text-7xl">Web3 under the hood</h3>
             </div>
             <div className="grid grid-cols-1 gap-4 lg:grid-cols-4">
-              <FeatureCard title="Invisible Wallet" description="Automatically generate wallets for all players. Play and collect assets without connecting your wallet or signing transactions." image="/assets/features/wallet.png" learnMore="https://portal.thirdweb.com/wallet/local-wallet" />
-              <FeatureCard title="Gasless" description="Take care of the blockchain gas cost for your users to provide a seamless experience." image="/assets/features/gasless.png" learnMore="https://portal.thirdweb.com/glossary/gasless-transactions" />
+              <FeatureCard title="Email Wallet" description="Automatically generate personal wallets for all players. No need to connect your wallet or sign transactions." image="/assets/features/wallet.png" learnMore="https://portal.thirdweb.com/wallet/paper" />
+              <FeatureCard title="Gasless" description="Take care of the blockchain gas cost for your users to provide a seamless experience with the power of Account Abstraction. Your account and data persist, cross-platform and cross-device." image="/assets/features/gasless.png" learnMore="https://portal.thirdweb.com/wallet/smart-wallet" />
               <FeatureCard title="Gaming Contracts" description="1-click deploy contracts from Explore. Every contract you need to create your web3 game." image="/assets/features/gaming.png" learnMore="https://thirdweb.com/explore/gaming" />
               <FeatureCard title="Unity SDK" description="Simple to use and robust SDK that works cross-platform (native, mobile, console, browser, and VR). Quickly integrate web3 into games." image="/assets/features/unity.png" learnMore="https://portal.thirdweb.com/unity" />
             </div>
