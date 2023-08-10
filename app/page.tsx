@@ -14,9 +14,9 @@ export default function Home() {
           <div className="lg:mx-auto lg:max-w-xl">
             <HeroTitle />
             <YoutubeEmbed youtubeId="daL8qFTHnRI" />
-            <div className="px-12 mt-12">
+            <div className="px-12 mt-12 lg:px-36" >
               <h3 className="mb-6 text-3xl uppercase lg:text-4xl">Download now</h3>
-              <div className="grid grid-cols-2 gap-2 ">
+              <div className="grid grid-cols-2 gap-4 ">
                 <IconBox src="/assets/platforms/apple.svg" alt="Mac" href="/assets/downloads/web3-warriors-launcher-mac.zip" />
                 <IconBox src="/assets/platforms/windows.png" alt="Windows" href="/assets/downloads/web3-warriors-launcher-windows.zip" />
               </div>
