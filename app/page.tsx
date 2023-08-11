@@ -13,7 +13,7 @@ export default function Home() {
         <div className="container gap-12 px-4 mx-auto text-center sm:px-6 lg:px-8">
           <div className="lg:mx-auto lg:max-w-xl">
             <HeroTitle />
-            <YoutubeEmbed youtubeId="daL8qFTHnRI" />
+            <YoutubeEmbed youtubeId="kjWtVDCVfg0" />
             <div className="px-12 mt-12 lg:px-36" >
               <h3 className="mb-6 text-3xl uppercase lg:text-4xl">Download now</h3>
               <div className="grid grid-cols-2 gap-4 ">
