@@ -32,7 +32,7 @@ Check out my character on Web3 Warriors, by @thirdweb`,
       </div>
       <div className="flex justify-center mt-12">
         {searchParams.ipfs ? (
-          <Image src={`https://ipfs.thirdwebcdn.com/ipfs/${searchParams.ipfs}`} alt="" width={800} height={200} />
+          <Image src={`https://ipfs.io/ipfs/${searchParams.ipfs}`} alt="" width={800} height={200} />
         ) : <div className="italic">No image found</div>}
       </div>
       <div className="mt-12">
